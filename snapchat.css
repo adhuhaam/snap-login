@@ -1,0 +1,252 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background: #FEFC02;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.left,
+.mid,
+.right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.left i {
+    font-size: 30px;
+    border: none;
+
+    background: white;
+}
+
+.search {
+    display: flex;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.icon i {
+    font-size: 25px;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.righticon1 i {
+    padding: 15px;
+    background: white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.righticon2,
+.righticon3 {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.imgdiv {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.div1 {
+    width: 40%;
+    height: 500px;
+}
+
+.div2 {
+    width: 60%;
+    height: 500px;
+}
+
+.subdiv {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.subdiv1 {
+    width: 90%;
+}
+
+.subdiv1 input {
+    width: 96%;
+    padding: 10px 40px 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.subdiv1 ::placeholder {
+    font-weight: bolder;
+}
+
+.subdiv2 {
+    width: 35%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.subdiv2 h4 {
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.right h5 {
+    display: none;
+}
+
+.menu_hide {
+    display: none;
+}
+
+.imgdiv_hide{
+
+    display: none;
+}
+.div_hide{
+    background: black;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    display: none;
+}
+.div_hide h6{
+    background:#FEFC02;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius:20px ;
+    font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .mid {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        margin-bottom: 50px;
+        bottom: 0%;
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .righticon1,
+    .righticon2,
+    .righticon3 {
+        display: none;
+    }
+
+    .menu_hide {
+        display: block;
+        margin-left: 20px;
+        padding: 0.6rem;
+        background: white;
+        border-radius: 50%;
+    }
+
+    .right h5 {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .search_bar {
+        display: none;
+    }
+
+    .search{
+        background: none;
+    }
+
+    .search i {
+        display: block;
+    }
+
+    .logo i {
+        padding: 0.7rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search_icon{
+        padding: 0.7rem;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 100px;
+    }
+
+    .imgdiv{
+        display: none;
+    }
+
+    .imgdiv_hide{
+        display: block;
+        text-align: center;
+        margin-top: 50%;
+    }
+
+    .imgdiv_hide button{
+        color: white;
+        font-weight: bolder;
+    font-size: 20px;
+        background: black;
+        padding: 10px 40px;
+        margin-top: 40px;
+        border-radius: 25px;
+    }
+
+    .div_hide{
+        position: fixed;
+        display: block;
+        bottom: 0%;
+    }
+
+}
